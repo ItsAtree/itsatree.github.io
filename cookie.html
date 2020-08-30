@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                text-align: center;
+            }
+            #gamearea {
+                background-color: cornflowerblue;
+                height: 75vh;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>MERIT BADGE COUNTER</h1>
+        <h1 id="jello">CLICK BUTTON TO START</h1>
+        <p>By: Katherine Adams</p>
+        <button onclick="pressed()">button</button>
+      <br>
+        <br>
+        <img onclick="pressed()" src="game%20design.jpg">
+    </body>
+    <script>
+       var number = 0;
+        
+        
+        
+        function pressed() {
+            number = number + 1;
+            
+            var boolean = true;
+            
+            if (number == 1) {
+                document.getElementById("jello").innerHTML = number + " Merit badge";
+            
+            } else {
+                document.getElementById("jello").innerHTML = number + " Merit badges";
+            
+            }
+    
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            
+            document.body.style.backgroundColor = "rgb(" + r + ", " + g + ", " + b + ")";
+        }
+        
+        
+       
+    
+    
+    
+    </script>
+</html>
